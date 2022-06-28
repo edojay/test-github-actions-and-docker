@@ -17,4 +17,4 @@ jobs:
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag edojay/docker-image-autobuild:latest
     - name: Push the Docker image
-      run: docker login -u edojay -p ${{ secrets.DOCKER_TOKEN }} && docker push edojay/docker-image-autobuild:latest
+      run: docker login -u edojay -p ${{ secrets.DOCKERHUB_TOKEN }} && docker push edojay/docker-image-autobuild:latest
