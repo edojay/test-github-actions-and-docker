@@ -41,7 +41,7 @@ jobs:
     #    export PYTHONPATH=src
     #    pytest
 
-    docker:
+  docker:
     runs-on: ubuntu-latest
     steps:
       -
