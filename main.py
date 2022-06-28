@@ -1,8 +1,2 @@
 print("hello world!")
 print("change one to test build")
-
-def inc(x):
-    return x + 1
-
-def test_answer():
-    assert inc(3) == 5
