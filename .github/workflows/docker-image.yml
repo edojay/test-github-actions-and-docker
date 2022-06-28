@@ -15,6 +15,6 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Build the Docker image
-      run: docker build . --file Dockerfiule --tag
+      run: docker build . --file Dockerfiule --tag edojay/docker-image-autobuild:latest
     - name: Push the Docker image
-    run: docker login -u -p ${{ secrets.DOCKER_TOKEN }} && docker push 
+      run: docker login -u -p ${{ secrets.DOCKER_TOKEN }} && docker push edojay/docker-image-autobuild:latest
