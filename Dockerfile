@@ -1,3 +1,9 @@
-FROM ubuntu:latest
+#FROM ubuntu:latest
 
-CMD echo "Dockerfile created"
+#CMD echo "Dockerfile created"
+
+FROM python:3.8
+
+ADD main.py .
+
+CMD [ "python", "./main.py"]
